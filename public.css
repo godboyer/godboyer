@@ -1,0 +1,147 @@
+/* 参考新浪重置样式填写 */
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+p,
+input,
+legend,
+img,
+p,
+form,
+fieldset,
+ul,
+ol,
+textarea,
+button,
+header,
+footer,
+section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #333;
+  font: 16px/20px "SimSun", "宋体", "Arial Narrow", "CHAOT";
+  background: #fff;
+  /* overflow-y:scroll; */
+  overflow-x: hidden;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+i,
+em,
+u,
+s {
+  font-style: normal;
+}
+
+a,
+img,
+input,
+textarea,
+button {
+  border: none;
+  border: 0;
+  outline: none;
+}
+img {
+  display: block;
+}
+/* html,body {
+  height: 100%;
+} */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: #666;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+/* grid布局盒子 */
+.grid-box {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+/* flex布局纵向  侧轴居中 */
+.flex-box-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* flex布局横向   侧轴从左向右 */
+.flex-box-row {
+  display: flex;
+  /* align-items: center; */
+  flex-shrink: 0;
+  align-items: flex-start;
+}
+/* 主轴居中 */
+.row-cen {
+  justify-content: center;
+}
+
+/* 侧轴 对齐方式 末尾 */
+.row-xend {
+  align-items: flex-end;
+}
+
+/* 开启折行 */
+.row-wrap {
+  flex-wrap: wrap;
+}
+
+/* 主轴对齐方式两端对齐 */
+.row-bet {
+  justify-content: space-between;
+}
+
+/* 主轴对齐方式  环绕对齐 */
+.row-arud {
+  justify-content: space-around;
+}
+/* 侧轴对齐方式  从头对齐   纵向排列从上向下排列 */
+.col-start {
+  align-items: flex-start;
+}
+
+/* 改变子元素的侧轴对齐方式   居中 */
+.col-self {
+  align-self: center;
+}
+
+/* 文本不折行 */
+.nowrap {
+  white-space: nowrap;
+  /* 元素中内容固有的宽度 */
+  width: max-content;
+}
